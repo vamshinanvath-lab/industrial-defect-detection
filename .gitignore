@@ -1,0 +1,17 @@
+@'
+
+# Dataset and large files
+data/
+*.zip
+models/
+*.pth
+*.pt
+results/
+
+# Environment and credentials
+.venv/
+__pycache__/
+.env
+.env.*
+!.env.example
+'@ | Add-Content .gitignore

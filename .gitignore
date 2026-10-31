@@ -1,17 +1,31 @@
-@'
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
 
 # Dataset and large files
 data/
 *.zip
+
+# Model files
 models/
 *.pth
 *.pt
+*.onnx
+
+# Results
 results/
 
-# Environment and credentials
-.venv/
-__pycache__/
+# Credentials
 .env
 .env.*
 !.env.example
-'@ | Add-Content .gitignore
+
+# IDE and system files
+.vscode/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
